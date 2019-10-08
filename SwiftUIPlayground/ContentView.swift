@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var testingFlags = false
     var body: some View {
-        Text("Hello, World!")
+        if testingFlags {
+            return Text("State Flag is true")
+        }
+        return Text("State Flag is false")
     }
 }
 
